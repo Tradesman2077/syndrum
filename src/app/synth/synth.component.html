@@ -1,0 +1,23 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<div class="container">
+    <h1>SynDRUMM</h1>
+    <div class="row">
+        <div class="col-6">
+            <button class="buttonR m-3" (click)="play()">Trigger</button>
+        </div>
+        <div class="col-6">
+            <div class="slidecontainer">
+                <h4>Pitch - OSC1 </h4><input type="range" min="1" max="2000" step="10" value="1000" class="slider" id="pitch" (mouseup)="changePitch()" >
+                <h4>Volume - OSC1</h4><input type="range" min="-30" max="22" value="5" class="slider"  id="volume" (mouseup)="changeVol()">
+                <h4>Pitch - OSC2 </h4><input type="range" min="1" max="2000" step="10" value="1000" class="slider" id="pitchOsc2" (mouseup)="changePitchOsc2()" >
+                <h4>Volume - OSC2</h4><input type="range" min="-30" max="22" value="5" class="slider"  id="volumeOsc2" (mouseup)="changeVolOsc2()">
+                <h4>Volume - Noise</h4><input type="range" min="-30" max="22" value="5" class="slider" id="noiseVolume"  (mouseup)="changeNoiseVolume()">
+                <h4>Release </h4><input type="range" min="0" max="10" step="0.01"value="1" class="slider" id="release" (mouseup)="changeRelease()">
+                <h4>LpFreq</h4><input type="range" min="0" max="20000" step="10" value="10000" class="slider" id="cutoff" (mouseup)="changeLp()">
+            </div>
+        </div>
+    </div>
+</div>
+
